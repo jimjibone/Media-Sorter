@@ -17,6 +17,11 @@
 		1AD70CB814A2077200EFA3E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD70C9814A2077100EFA3E9 /* Cocoa.framework */; };
 		1AD70CC014A2077200EFA3E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AD70CBE14A2077200EFA3E9 /* InfoPlist.strings */; };
 		1AD70CC314A2077200EFA3E9 /* Media_SorterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD70CC214A2077200EFA3E9 /* Media_SorterTests.m */; };
+		1AD70CCF14A207F600EFA3E9 /* TVDBApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD70CCE14A207F600EFA3E9 /* TVDBApi.m */; };
+		1AD70CD214A2173600EFA3E9 /* TVDBShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD70CD114A2173600EFA3E9 /* TVDBShow.m */; };
+		1AD70CD814A230DC00EFA3E9 /* JRMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD70CD514A230DC00EFA3E9 /* JRMedia.m */; };
+		1AD70CD914A230DC00EFA3E9 /* JRMediaSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD70CD714A230DC00EFA3E9 /* JRMediaSorter.m */; };
+		1AD70CDC14A28CC900EFA3E9 /* JRMediaUpdateFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD70CDB14A28CC900EFA3E9 /* JRMediaUpdateFileController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +40,30 @@
 		1AD70C9B14A2077100EFA3E9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1AD70C9C14A2077100EFA3E9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1AD70C9D14A2077200EFA3E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1AD70CA014A2077200EFA3E9 /* Media Sorter-Info.plist */ = {isa = PBXFileReference; path = "Media Sorter-Info.plist"; sourceTree = "<group>"; };
+		1AD70CA014A2077200EFA3E9 /* Media Sorter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Media Sorter-Info.plist"; sourceTree = "<group>"; };
 		1AD70CA214A2077200EFA3E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AD70CA414A2077200EFA3E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1AD70CA614A2077200EFA3E9 /* Media Sorter-Prefix.pch */ = {isa = PBXFileReference; path = "Media Sorter-Prefix.pch"; sourceTree = "<group>"; };
+		1AD70CA614A2077200EFA3E9 /* Media Sorter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Media Sorter-Prefix.pch"; sourceTree = "<group>"; };
 		1AD70CA814A2077200EFA3E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		1AD70CAA14A2077200EFA3E9 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AD70CAA14A2077200EFA3E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AD70CAB14A2077200EFA3E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1AD70CAE14A2077200EFA3E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1AD70CB514A2077200EFA3E9 /* Media SorterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Media SorterTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD70CB614A2077200EFA3E9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1AD70CBD14A2077200EFA3E9 /* Media SorterTests-Info.plist */ = {isa = PBXFileReference; path = "Media SorterTests-Info.plist"; sourceTree = "<group>"; };
+		1AD70CBD14A2077200EFA3E9 /* Media SorterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Media SorterTests-Info.plist"; sourceTree = "<group>"; };
 		1AD70CBF14A2077200EFA3E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1AD70CC114A2077200EFA3E9 /* Media_SorterTests.h */ = {isa = PBXFileReference; path = Media_SorterTests.h; sourceTree = "<group>"; };
+		1AD70CC114A2077200EFA3E9 /* Media_SorterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Media_SorterTests.h; sourceTree = "<group>"; };
 		1AD70CC214A2077200EFA3E9 /* Media_SorterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Media_SorterTests.m; sourceTree = "<group>"; };
+		1AD70CCD14A207F600EFA3E9 /* TVDBApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVDBApi.h; path = "TVDB API/TVDBApi.h"; sourceTree = "<group>"; };
+		1AD70CCE14A207F600EFA3E9 /* TVDBApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVDBApi.m; path = "TVDB API/TVDBApi.m"; sourceTree = "<group>"; };
+		1AD70CD014A2173600EFA3E9 /* TVDBShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVDBShow.h; path = "TVDB API/TVDBShow.h"; sourceTree = "<group>"; };
+		1AD70CD114A2173600EFA3E9 /* TVDBShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVDBShow.m; path = "TVDB API/TVDBShow.m"; sourceTree = "<group>"; };
+		1AD70CD414A230DC00EFA3E9 /* JRMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRMedia.h; path = "JRMedia Sorter/JRMedia.h"; sourceTree = "<group>"; };
+		1AD70CD514A230DC00EFA3E9 /* JRMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRMedia.m; path = "JRMedia Sorter/JRMedia.m"; sourceTree = "<group>"; };
+		1AD70CD614A230DC00EFA3E9 /* JRMediaSorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRMediaSorter.h; path = "JRMedia Sorter/JRMediaSorter.h"; sourceTree = "<group>"; };
+		1AD70CD714A230DC00EFA3E9 /* JRMediaSorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRMediaSorter.m; path = "JRMedia Sorter/JRMediaSorter.m"; sourceTree = "<group>"; };
+		1AD70CDA14A28CC900EFA3E9 /* JRMediaUpdateFileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRMediaUpdateFileController.h; sourceTree = "<group>"; };
+		1AD70CDB14A28CC900EFA3E9 /* JRMediaUpdateFileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRMediaUpdateFileController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +90,15 @@
 		1AD70C8914A2077100EFA3E9 = {
 			isa = PBXGroup;
 			children = (
+				1AD70CD314A2297600EFA3E9 /* JRMediaSorter */,
+				1AD70CCC14A207A600EFA3E9 /* TVDB API */,
 				1AD70C9E14A2077200EFA3E9 /* Media Sorter */,
 				1AD70CBB14A2077200EFA3E9 /* Media SorterTests */,
 				1AD70C9714A2077100EFA3E9 /* Frameworks */,
 				1AD70C9514A2077100EFA3E9 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		1AD70C9514A2077100EFA3E9 /* Products */ = {
 			isa = PBXGroup;
@@ -118,6 +136,8 @@
 				1AD70CAB14A2077200EFA3E9 /* AppDelegate.m */,
 				1AD70CAD14A2077200EFA3E9 /* MainMenu.xib */,
 				1AD70C9F14A2077200EFA3E9 /* Supporting Files */,
+				1AD70CDA14A28CC900EFA3E9 /* JRMediaUpdateFileController.h */,
+				1AD70CDB14A28CC900EFA3E9 /* JRMediaUpdateFileController.m */,
 			);
 			path = "Media Sorter";
 			sourceTree = "<group>";
@@ -151,6 +171,28 @@
 				1AD70CBE14A2077200EFA3E9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AD70CCC14A207A600EFA3E9 /* TVDB API */ = {
+			isa = PBXGroup;
+			children = (
+				1AD70CCD14A207F600EFA3E9 /* TVDBApi.h */,
+				1AD70CCE14A207F600EFA3E9 /* TVDBApi.m */,
+				1AD70CD014A2173600EFA3E9 /* TVDBShow.h */,
+				1AD70CD114A2173600EFA3E9 /* TVDBShow.m */,
+			);
+			name = "TVDB API";
+			sourceTree = "<group>";
+		};
+		1AD70CD314A2297600EFA3E9 /* JRMediaSorter */ = {
+			isa = PBXGroup;
+			children = (
+				1AD70CD414A230DC00EFA3E9 /* JRMedia.h */,
+				1AD70CD514A230DC00EFA3E9 /* JRMedia.m */,
+				1AD70CD614A230DC00EFA3E9 /* JRMediaSorter.h */,
+				1AD70CD714A230DC00EFA3E9 /* JRMediaSorter.m */,
+			);
+			name = JRMediaSorter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +304,11 @@
 			files = (
 				1AD70CA514A2077200EFA3E9 /* main.m in Sources */,
 				1AD70CAC14A2077200EFA3E9 /* AppDelegate.m in Sources */,
+				1AD70CCF14A207F600EFA3E9 /* TVDBApi.m in Sources */,
+				1AD70CD214A2173600EFA3E9 /* TVDBShow.m in Sources */,
+				1AD70CD814A230DC00EFA3E9 /* JRMedia.m in Sources */,
+				1AD70CD914A230DC00EFA3E9 /* JRMediaSorter.m in Sources */,
+				1AD70CDC14A28CC900EFA3E9 /* JRMediaUpdateFileController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
