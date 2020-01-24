@@ -16,7 +16,7 @@
     self = [super init];
     if (self) {
         // Initialisations
-		APIKey = [[NSString alloc] initWithString:@"7F6CCD965D3EF4EC"];
+		APIKey = [[NSString alloc] initWithString:@"<your-api-key>"];
 		mirrorPath = [[NSString alloc] initWithString:@"http://www.thetvdb.com/api/"];
 		getSeriesPath = [[NSString alloc] initWithString:@"GetSeries.php?seriesname="];
 		currentSearchType = 0;
